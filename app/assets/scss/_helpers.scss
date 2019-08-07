@@ -1,0 +1,94 @@
+// ------ Helpers
+
+// Up to 30px padding
+@for $i from 0 through 30 {
+
+    td.pt#{$i} {
+        padding-top: 0px + $i;
+    }
+
+    td.pr#{$i} {
+        padding-right: 0px + $i;
+    }
+
+    td.pb#{$i} {
+        padding-bottom: 0px + $i;
+    }
+
+    td.pl#{$i} {
+        padding-left: 0px + $i;
+    }
+
+}
+
+// Add this to a <td> to set a custom height. Will need a '&nbps;' wrapped in a <span> inside the <td>
+.spacer {
+    height: $spacer-height;
+    font-size: 0;
+    line-height: $spacer-height;
+
+    span.spacer {
+        font-size: 0;
+        line-height: $spacer-height;
+    }
+
+}
+
+// Use align="left" / align="right" on the <table> to 'float' it left or right - Specify width on <table> as well.
+table.float {
+    mso-table-rspace: 7pt;
+
+    &.white {
+        border: 1px solid #ffffff; // Update border color to the background color of the container
+    }
+
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+// Removes gap added below imgs in some email clients
+.img-fix {
+    display: block;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+
+.table {
+    display: table;
+    border: 0;
+}
+
+.table-cell {
+    display: table-cell;
+    background-color: #ebedee;
+    height: 200px;
+
+    &:first-child {
+        border-left: 30px solid white;
+        border-right: 20px solid white;
+    }
+
+    &:last-child {
+        border-left: 20px solid white;
+        border-right: 30px solid white;
+    }
+
+}
+
+.preview-text {
+    display: none;
+    font-size: 0px;
+    line-height: 0px;
+    max-height: 0px;
+    max-width: 0px;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    mso-hide: all;
+}

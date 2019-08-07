@@ -1,0 +1,25 @@
+// ------ Variables
+
+$email-window-bg:   #ebedee;
+$email-bg:          #ffffff;
+
+$font-family:       'Roboto', Arial, sans-serif; // styles in the <head> fallback to arial for Outlook
+$font-color:        #333333;
+$font-size:    		16px;
+
+$email-width:       600px; // Update emailWidth in .json file
+$gutter:            30px;
+$spacer-height:     15px;
+
+$primary-color:     #c4161c;
+$secondary-color:   #d9d9d9;
+
+@import 'grid';
+@import 'type';
+@import 'button';
+@import 'cards';
+@import 'background-image';
+@import 'background-gradient';
+@import 'helpers';
+
+// ------ Custom Styles

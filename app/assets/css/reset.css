@@ -1,0 +1,78 @@
+/* Reset */
+
+/* Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin to the compose a reply window. */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    mso-margin-top-alt: 0px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: none !important;
+    mso-margin-bottom-alt: 0px;
+    mso-padding-alt: 0px 0px 0px 0px;
+}
+
+/* Force Outlook to provide a "view in browser" menu link. */
+#outlook a {
+    padding: 0;
+}
+
+/* Overrides Outlook changing links to default colors & once clicked */
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+    text-decoration: none;
+  }
+
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Stops Outlook from adding extra spacing to tables. Fixes webkit padding issue */
+table, td {
+    border-spacing: 0;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+/* Uses a better rendering method when resizing images in IE. */
+img {
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+a img {
+    border: none;
+}
+
+/* A work-around for iOS meddling in triggered links. */
+[x-apple-data-detectors],
+[href^="tel"],
+[href^="sms"] {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Forces Outlook.com to display emails at full width */
+.ReadMsgBody, .ExternalClass {
+    width: 100%;
+}
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+}
+
+/* Campaign Monitor resets */
+
+/* Fixes positioning of edit buttons */
+.cs-button-block {
+    top: 0 !important;
+}
+
+/* End of Reset */

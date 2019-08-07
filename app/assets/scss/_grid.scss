@@ -1,0 +1,41 @@
+// ------ Layout
+
+body,
+.wrapper {
+    background-color: $email-window-bg;
+}
+
+.container {
+    width: 100%;
+    max-width: $email-width;
+}
+
+.email-bg {
+    width: 100%;
+    background-color: $email-bg;
+}
+
+.row {
+    font-size: 0; // fixes bug for display: inline-block white space rendering. Allows columns to sit side by side.
+    padding: 0 $gutter $gutter - 10px;
+    text-align: left;
+}
+
+// Outputs percentage widths up to 100%, purge css removes any not being used.
+@for $i from 1 through 100 {
+
+    $width: percentage($i / 100);
+
+    .col-#{$i} {
+        width: $width;
+        display: inline-block;
+        vertical-align: top;
+
+        @media only screen and (max-width: 480px) {
+            width: 100% !important;
+            display: block !important;
+        }
+
+    }
+
+}

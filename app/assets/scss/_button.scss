@@ -1,0 +1,32 @@
+// ------ Buttons
+
+.btn {
+
+    td {
+        background-color: #ffffff;
+        display: block;
+        transition: all 0.25s ease;
+
+        &:hover {
+            background-color: $primary-color !important;
+        }
+
+    }
+
+    a {
+        background-color: #ffffff;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+
+        &:hover {
+            background-color: $primary-color !important;
+            color: #ffffff !important;
+        }
+
+    }
+    
+}
